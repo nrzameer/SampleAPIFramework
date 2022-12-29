@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.644 sec
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.363 sec <<< FAILURE!
+validateCreateAirline(com.test.testcases.CreateAirlineTest)  Time elapsed: 6.226 sec  <<< FAILURE!
+java.lang.AssertionError: expected [201] but found [404]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.testcases.CreateAirlineTest.validateCreateAirline(CreateAirlineTest.java:30)
+

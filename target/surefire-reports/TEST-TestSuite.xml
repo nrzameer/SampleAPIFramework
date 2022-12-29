@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="TestSuite" time="13.53" errors="0" skipped="0">
+<testsuite tests="3" failures="1" name="TestSuite" time="9.311" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="C:\Users\Roshan_Madurai\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7900072321610877745.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Roshan_Madurai\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4658301114666507198.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_144\bin;E:\Android SDK\tools;E:\Android SDK\platforms;E:\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Users\Roshan_Madurai\AppData\Local\Programs\Python\Python38-32\Scripts;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install -P test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install -P mock"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,6 +61,33 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.test.testcases.GetAirlinesTest" name="validateStatusCode" time="9.258"/>
-  <testcase classname="com.test.testcases.GetAirlinesTest" name="validateName" time="4.272"/>
+  <testcase classname="com.test.testcases.CreateAirlineTest" name="validateCreateAirline" time="6.226">
+    <failure message="expected [201] but found [404]" type="java.lang.AssertionError">java.lang.AssertionError: expected [201] but found [404]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.testcases.CreateAirlineTest.validateCreateAirline(CreateAirlineTest.java:30)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@43556938
+{
+  &quot;id&quot; : 10000456,
+  &quot;name&quot; : &quot;Roshan Airway&quot;,
+  &quot;country&quot; : &quot;India&quot;,
+  &quot;logo&quot; : &quot;Sample logo&quot;,
+  &quot;slogan&quot; : &quot;From India&quot;,
+  &quot;headQuaters&quot; : &quot;India&quot;,
+  &quot;website&quot; : &quot;http:qacrunch.com&quot;,
+  &quot;established&quot; : &quot;2022&quot;
+}
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</system-err>
+  </testcase>
+  <testcase classname="com.test.testcases.GetAirlinesTest" name="validateStatusCode" time="0.265"/>
+  <testcase classname="com.test.testcases.GetAirlinesTest" name="validateName" time="2.82"/>
 </testsuite>
