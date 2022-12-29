@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="13907" started-at="2022-12-28T11:34:01Z" finished-at="2022-12-28T11:34:15Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="13907" started-at="2022-12-28T11:34:01Z" finished-at="2022-12-28T11:34:15Z">
+      <class name="com.test.testcases.BaseTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.test.testcases.BaseTest@589b3632]" name="init" is-config="true" duration-ms="58" started-at="2022-12-28T11:34:01Z" finished-at="2022-12-28T11:34:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+      </class> <!-- com.test.testcases.BaseTest -->
+      <class name="com.test.testcases.GetAirlinesTest">
+        <test-method status="PASS" signature="validateStatusCode()[pri:1, instance:com.test.testcases.GetAirlinesTest@45f45fa1]" name="validateStatusCode" duration-ms="9225" started-at="2022-12-28T11:34:01Z" finished-at="2022-12-28T11:34:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStatusCode -->
+        <test-method status="PASS" signature="validateName()[pri:2, instance:com.test.testcases.GetAirlinesTest@45f45fa1]" name="validateName" duration-ms="4271" started-at="2022-12-28T11:34:10Z" finished-at="2022-12-28T11:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateName -->
+      </class> <!-- com.test.testcases.GetAirlinesTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
