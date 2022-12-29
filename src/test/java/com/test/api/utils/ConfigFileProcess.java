@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * Config class to process the config file and to set the profiles
+ * @author Roshan Zameer
+ * 
+ */
 public class ConfigFileProcess {
 
 	

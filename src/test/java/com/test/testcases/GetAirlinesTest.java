@@ -18,6 +18,7 @@ public class GetAirlinesTest extends BaseTest{
 	@Description("Airlines API validation")
 	public void validateStatusCode() throws IOException {
 		getAirlines = new GetAirlines();
+		System.out.println("In get mock airline " + init());
 		int actualStatusCode = getAirlines.validateGetAirlineStatus(init()+EndPoints.getAirlinesEndpoint);
 		org.testng.Assert.assertEquals(actualStatusCode, 200);
 	}

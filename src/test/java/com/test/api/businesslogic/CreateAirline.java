@@ -8,6 +8,12 @@ import io.qameta.allure.internal.shadowed.jackson.core.JsonProcessingException;
 import io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
 
+/**
+ * This class has the business logic for creation of Airlines 
+ * @author Roshan Zameer
+ * 
+ */
+
 public class CreateAirline {
 	CreateAirlineRequest createairlinerequest;
 	

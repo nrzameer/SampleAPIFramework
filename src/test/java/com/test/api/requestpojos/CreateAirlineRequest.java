@@ -1,5 +1,10 @@
 package com.test.api.requestpojos;
 
+/**
+ * This is the Pojo for the create airlines request
+ * @author Roshan Zameer
+ * 
+ */
 
 public class CreateAirlineRequest {
 

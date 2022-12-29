@@ -4,6 +4,12 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
+/**
+ * This class has the common methods and methods to validate the response 
+ * @author Roshan Zameer
+ * 
+ */
+
 public class Validators {
 	
 	public static int checkSuccessCode(String uri) {
